@@ -2,24 +2,43 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import 'react-photoswipe/lib/photoswipe.css';
-import { PhotoSwipeGallery, PhotoSwipe } from 'react-photoswipe';
+import { PhotoSwipeGallery } from 'react-photoswipe';
+import photoData from './photoData.json';
 
-let items = [
-  {
-    src: 'http://lorempixel.com/1200/900/sports/1',
-    thumbnail: 'http://lorempixel.com/120/90/sports/1',
-    w: 1200,
-    h: 900,
-    title: 'Image 1'
-  },
-  {
-    src: 'http://lorempixel.com/1200/900/sports/2',
-    thumbnail: 'http://lorempixel.com/120/90/sports/2',
-    w: 1200,
-    h: 900,
-    title: 'Image 2'
+const styles = {
+  sl: 'Split Ledgestone',
+  cs: 'Castlestone',
+  as: 'Ashlarstone',
+  rb: 'Rustic Brick',
+  cl: 'Chiseled Limestone',
+  tl: 'Tumbled Ledgestone',
+  rs: 'Riverstone',
+  qf: 'Quick Fit',
+  fs: 'Fieldstone',
+  ss: 'Stackstone',
+};
+
+const getStyleNames = (names) => {
+  if (names.length === 1) {
+    return styles[names[0]];
+  } else {
+    return 'Blend of ' + names.map((name) => styles[name]).join(' & ') + '.';
   }
-];
+}
+
+const getPhotoGroup = (group) => {
+  const fileList = photoData[group];
+  return fileList
+    // .sort()
+    .map((raw) => ({
+      src: `img/${raw.file}.jpg`,
+      thumbnail: `img/${raw.file}t.jpg`,
+      w: raw.w,
+      h: raw.h,
+      title: getStyleNames(raw.stone) + (raw.detail ? `. ${raw.detail}` : ""),
+      stone: raw.stone,
+    }));
+};
 
 let options = {
   //http://photoswipe.com/documentation/options.html
@@ -27,9 +46,11 @@ let options = {
 
 const getThumbnailContent = (item) => {
   return (
-    <img src={item.thumbnail} width={120} height={90}/>
+    <img src={item.thumbnail} width={120} height={120}/>
   );
 }
+
+const items = getPhotoGroup('gallery');
 
 function App() {
   return (
