@@ -962,6 +962,40 @@
         }
     ],
     "trim" : [
-
+        {
+            "file": "trim1",
+            "w": 1100,
+            "h": 800,
+            "detail": "Hearthstones",
+            "priority": 0
+        },
+        {
+            "file": "trim2",
+            "w": 1100,
+            "h": 800,
+            "detail": "Capstones",
+            "priority": 0
+        },
+        {
+            "file": "trim3",
+            "w": 1400,
+            "h": 800,
+            "detail": "Hearthstones",
+            "priority": 0
+        },
+        {
+            "file": "trim4",
+            "w": 1100,
+            "h": 800,
+            "detail": "Trim",
+            "priority": 0
+        },
+        {
+            "file": "trim5",
+            "w": 1100,
+            "h": 800,
+            "detail": "Mantle",
+            "priority": 0
+        }
     ]
 }

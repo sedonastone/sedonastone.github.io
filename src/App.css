@@ -1,6 +1,11 @@
+h2, h3 {
+  margin: 0.2em auto;
+  margin-block-start: 0;
+}
+
 header {
   background-color: #F2C0A7;
-  height: 10em;
+  height: 9em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -10,33 +15,34 @@ header {
 .logo {
   width: 4.5em;
   height: 3em;
-  border: 0.15em solid black;
+  border: 0.18em solid black;
+  border-radius: 0.05em;
   font-size: 2em;
   font-weight: 700;
-  /* line-height: 0; */
   text-align: right;
-  /* margin: 1em; */
 }
 
 .logo p {
-  margin: -0.1em 0.2em -0.25em;
+  margin: 0 0.2em -0.25em;
 }
 
 .description {
   display: none;
   font-size: 1.2em;
+  font-weight: 400;
   max-width: 24em;
+}
+
+.description p {
+  margin: 0;  
 }
 
 nav {
   background-color: #5E747F;
   height: 2em;
-  /* position: fixed; */
   position: sticky;
   top: 0;
-  /* margin: auto 0; */
-  /* box-shadow: 0 0 1em white; */
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -46,7 +52,6 @@ nav ul {
   text-align: center;
   margin: 0;
   padding: 0;
-  /* display: flex; */
 }
 
 nav li {
@@ -57,48 +62,124 @@ nav li a {
   color: white;
   text-decoration: none;
   font-size: 1.2em;
-  /* letter-spacing: 0.05em; */
   margin: auto 0.5em;
   padding: 0 0.2em;
-  border: 0.15em solid black;
 }
 
 nav li a:hover {
   text-decoration: underline;
 }
 
-.gallery {
-  background-color: #FFFBF9;
-  /* background-color: #BCC6C0; */
+section {
+  padding-top: 2.4em;
+  padding-bottom: 1.2em;
+  max-width: 80em;
+  margin: auto;
+}
+
+#photos p {
+  margin: auto 12em;
 }
 
 .pswp-thumbnails {
-  margin: auto;
-  /* padding: 3em; */
-  max-width: 80em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .pswp-thumbnail {
-  margin-right: 0.1em;
-  margin-bottom: 0.1em;
-}
-
-.pswp-thumbnail:hover {
-  /* box-shadow: 0 0 10px #ccc; */
+  margin: 0.3em;
 }
 
 .pswp-thumbnail img {
   border-radius: 0.1em;
 }
 
-@media (min-width: 47.9385em) {
+.pswp-thumbnail img:hover {
+  box-shadow:  0 0.25em #5E747F;
+  cursor: pointer;
+}
+
+section#visit {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #F2C0A7;
+}
+
+.quote {
+  margin: 1em;
+  padding: 1em;
+  border: solid 0.6em #F2AC8A;
+  border-radius: 0.1em
+}
+
+.quote h1 {
+  text-align: center;
+}
+.stonecontainer {
+  max-width: 50em;
+  margin: auto;
+}
+
+.stonecontainer img {
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 0.3em;
+  margin-bottom: 0.1em;
+  border-radius: 0.2em;
+}
+
+#stones h2, #trim h2 {
+  text-align: center;
+}
+
+img.rc {
+  width: 23%;
+}
+
+img.sq {
+  width: 31%;
+}
+
+img { 
+  display: block;
+}
+
+form * {
+  display: block;
+}
+
+form label {
+  font-size: 1.2em;
+}
+
+form input, form textarea {
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-size: 1.4em;
+  border: none;
+}
+
+form button {
+  font-size: 1.4em;
+  width: 5em;
+  background-color: #5E747F;
+  border: none;
+  border-radius: 0.1em;
+  color: white;
+}
+
+@media (min-width: 23em) {
+  nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 48em) {
   header {
-    height: 12em;
+    height: 10em;
     flex-direction: row;
   }
 
@@ -108,18 +189,37 @@ nav li a:hover {
 
   nav li a {
     font-size: 1.4em;
+    font-weight: 500;
     letter-spacing: 0.05em;
     margin: auto 2em;
 
   }
   .pswp-thumbnails {
-    padding: 3em;
     justify-content: center;
   }
+}
 
-  .pswp-thumbnail {
-    margin-right: 0.4em;
-    margin-bottom: 0.2em;
+@media (min-width: 95em) {
+  nav {
+    position: fixed;
+    top: 6em;
+    left: 3em;
+    height: 10em;
+  }
+
+  nav ul {
+    text-align: left;
+
+  }
+
+  nav li {
+    display: block;
+  }
+  nav li a {
+    margin: auto 1.5em;
   }
   
+  main {
+    margin-left: 16em;
+  }
 }
