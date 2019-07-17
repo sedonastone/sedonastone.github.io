@@ -42,6 +42,8 @@ const getPhotoGroup = (group) => {
 
 let options = {
   //http://photoswipe.com/documentation/options.html
+  showHideOpacity: true,
+  getThumbBoundsFn: false,
 };
 
 const getThumbnailContent = (item) => {
@@ -54,14 +56,43 @@ const items = getPhotoGroup('gallery');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>hello world.</p>
-        <PhotoSwipeGallery items={items} options={options} thumbnailContent={getThumbnailContent}/>
-
+    <>
+      <header>
+        <div className="logo">
+          <p>SEDONA</p>
+          <p>STONE</p>
+          <p>VENEER</p>
+        </div>
+        <div className="description">Family owned & operated local manufacturer of beautiful stone veneer. We are proud to offer our high quality products at factory direct prices.</div>
       </header>
-    </div>
+      <nav>
+        <ul>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li><a href="#stones">Stone Styles</a></li>
+          <li><a href="#trim">Trim</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="photos" className="gallery">
+          <PhotoSwipeGallery items={items} options={options} thumbnailContent={getThumbnailContent}/>
+        </section>
+        <section id="visit">
+          <div>left</div>
+          <div>right</div>
+        </section>
+        <section id="stones">
+          10 grid in single image?
+        </section>
+        <section id="trim" className="gallery">
+          <PhotoSwipeGallery items={[items[0]]} options={options} thumbnailContent={getThumbnailContent}/>
+        </section>
+
+      </main>
+      <footer>
+      f
+      </footer>
+    </>
   );
 }
 
