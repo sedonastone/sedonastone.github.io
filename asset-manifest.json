@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/sedonasv/static/css/main.4225ebee.chunk.css",
+    "main.js": "/sedonasv/static/js/main.81d27267.chunk.js",
+    "main.js.map": "/sedonasv/static/js/main.81d27267.chunk.js.map",
+    "runtime~main.js": "/sedonasv/static/js/runtime~main.58e99b35.js",
+    "runtime~main.js.map": "/sedonasv/static/js/runtime~main.58e99b35.js.map",
+    "static/css/2.d4a6af3e.chunk.css": "/sedonasv/static/css/2.d4a6af3e.chunk.css",
+    "static/js/2.1b9b327e.chunk.js": "/sedonasv/static/js/2.1b9b327e.chunk.js",
+    "static/js/2.1b9b327e.chunk.js.map": "/sedonasv/static/js/2.1b9b327e.chunk.js.map",
+    "index.html": "/sedonasv/index.html",
+    "precache-manifest.d1f4dabe6ac323b5e91177dd8d9618ab.js": "/sedonasv/precache-manifest.d1f4dabe6ac323b5e91177dd8d9618ab.js",
+    "service-worker.js": "/sedonasv/service-worker.js",
+    "static/css/2.d4a6af3e.chunk.css.map": "/sedonasv/static/css/2.d4a6af3e.chunk.css.map",
+    "static/css/main.4225ebee.chunk.css.map": "/sedonasv/static/css/main.4225ebee.chunk.css.map",
+    "static/media/photoswipe.css": "/sedonasv/static/media/default-skin.b257fa9c.svg"
+  }
+}
