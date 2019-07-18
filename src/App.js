@@ -114,7 +114,6 @@ class Form extends React.Component {
   }
 }
 
-
 function App() {
   return (
     <>
@@ -127,7 +126,7 @@ function App() {
         <div className="description">
           <p>Local manufacturer of beautiful stone veneer.</p>
           <p>High quality products at factory direct prices.</p>
-          <p>Family owned & operated. (602) 845 - 0004</p>
+          <p>Family owned & operated. <b>(602) 845 - 0004</b></p>
         </div>
       </header>
       <nav id="navbar">
@@ -145,16 +144,20 @@ function App() {
         </section>
         <section id="visit">
           <div className="questions">
-            <h2>(602) 845 – 0004</h2>
-            <i>Give us a call for a free quote & more info. Or use this form:</i>
+            <div className="textcontent">
+              <h2>(602) 845 – 0004</h2>
+              <i>Give us a call for a free quote & more info. Or use this form:</i>
+            </div>
             <Form />
           </div>
           
           <div className="map">
-            <h2>9605 East Main St. Mesa, AZ 85207</h2>
-            <i>At the SE corner of 96th St. & Main St. (Apache Trail), next to Craft City.</i>
-            <h3>‍Mon to Fri: 8 – 4:30</h3>
-            <h3>‍Sat: Please call ahead for hours</h3>
+            <div className="textcontent">
+              <h2>9605 East Main St. Mesa, AZ 85207</h2>
+              <i>At the SE corner of 96th St. & Main St. (Apache Trail), next to Craft City.</i>
+              <h3>Mon to Fri: 8 – 4:30</h3>
+              <h3>Sat: Please call ahead for hours</h3>
+            </div>
             <iframe width="100%" height="450" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgVBnsl6wK4cRNDqotuzkOhc&key=AIzaSyCVHr2ug300Slszr1DiJrTCjqvO2Kmddhg&zoom=10"></iframe>
           </div>
         </section>
