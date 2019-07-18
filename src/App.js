@@ -178,7 +178,7 @@ function App() {
           </div>
         </section>
         <section id="stones">
-          <div class="section_description">
+          <div className="section_description">
             <h2>10 Stone Styles</h2>
             <p>We offer ten Stone Styles, with a wide variety of textures and shapes to fit your tastes, whether you are looking for something traditional or contemporary.</p>
             <ul>
