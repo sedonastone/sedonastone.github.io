@@ -48,6 +48,7 @@ let options = {
   captionEl: false,
   fullscreenEl: false,
   zoomEl: false,
+  bgOpacity: 0.8,
 };
 
 const getThumbnailContent = (item) => {
@@ -177,7 +178,22 @@ function App() {
           </div>
         </section>
         <section id="stones">
-          <h2>10 Stone Styles</h2>
+          <div class="section_description">
+            <h2>10 Stone Styles</h2>
+            <p>We offer ten Stone Styles, with a wide variety of textures and shapes to fit your tastes, whether you are looking for something traditional or contemporary.</p>
+            <ul>
+              <li><b>QUICK FIT</b> has multi-stone, segmented layers with no grouting required.</li>
+              <li><b>ASHLARSTONE</b> has slightly worn, shallow texture blocks.</li>
+              <li><b>FIELDSTONE</b> has angled, highly variable stone.</li>
+              <li><b>RUSTIC BRICK</b> has old world style bricks with a weathered surface.</li>
+              <li><b>CHISELED LIMESTONE</b> has roughly hand-carved blocks.</li>
+              <li><b>TUMBLED LEDGESTONE</b> has long, weathered edge layers.</li>
+              <li><b>RIVERSTONE</b> has naturally worn and rounded stones.</li>
+              <li><b>SPLIT LEDGESTONE</b> has angular layers with many unique shapes.</li>
+              <li><b>CASTLESTONE</b> has rectangular blocks with tightly fitting joints.</li>
+              <li><b>STACKSTONE</b> has tightly-fitting, wide layers of smooth rectangular stone.</li>
+            </ul>
+          </div>
           <div className="stonecontainer">
             {/* <div className="stonerow"> */}
               <img className="sq" src="img/sq_qf.jpg" alt="Stone style: Quick Fit" />
@@ -199,7 +215,10 @@ function App() {
           {/* <div id="spacer" /> */}
         </section>
         <section id="trim" className="gallery">
-          <h2>Wide selection of trim</h2>
+          <div className="section_description">
+            <h2>Wide selection of trim</h2>
+            <p>For a cohesive look, our trimstones offer the necessary accents to complete your project. We offer a wide range of trim to cap walls, provide seating surfaces, finish edges, surround outlets and doorways, and more. Trimstones are available in the same wide range of Color Schemes seen above. <b>Click photos to enlarge.</b></p>
+          </div>
           <PhotoSwipeGallery items={trimItems} options={options} thumbnailContent={getThumbnailContent}/>
         </section>
       </main>

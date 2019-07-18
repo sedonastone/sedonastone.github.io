@@ -132,6 +132,25 @@ section#visit {
 .quote h1 {
   text-align: center;
 }
+
+section#stones {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #FFF4E9;
+}
+
+section#trim {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.section_description {
+  max-width: 50em;
+  padding: 0 3em;
+}
+
 .stonecontainer {
   text-align: center;
   max-width: 50em;
