@@ -160,7 +160,7 @@ function App() {
       <main>
         <section id="photos" className="gallery">
           {/* <p>A selection of photos from some of the many Sedona Stone Veneer installations in the Phoenix metro area and across the Southwest. These include remodels, new construction, small updates, homes, businesses, interiors, exteriors, and more. Click photos to enlarge.</p>  */}
-          <PhotoSwipeGallery items={galleryItems} options={options} thumbnailContent={getThumbnailContent}/>
+          <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
         <section id="visit">
           <div className="questions">
@@ -229,7 +229,7 @@ function App() {
             <h2>Wide selection of trim</h2>
             <p>For a cohesive look, our trimstones offer the necessary accents to complete your project. We offer a wide range of trim to cap walls, provide seating surfaces, finish edges, surround outlets and doorways, and more. Trimstones are available in the same wide range of Color Schemes seen above. <b>Click photos to enlarge.</b></p>
           </div>
-          <PhotoSwipeGallery items={trimItems} options={options} thumbnailContent={getThumbnailContent}/>
+          <PhotoSwipeGallery items={trimItems} options={Object.assign({ galleryUID: 1 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
       </main>
       <footer>
