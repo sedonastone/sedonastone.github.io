@@ -8,7 +8,7 @@ h2 {
   text-align: center;
 }
 
-header {
+header, footer {
   background-color: #F2C0A7;
   height: 9em;
   display: flex;
@@ -193,7 +193,7 @@ form button {
 }
 
 @media (min-width: 48em) {
-  header {
+  header, footer {
     height: 10em;
     flex-direction: row;
   }

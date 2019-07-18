@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.png';
 import './App.css';
 import 'react-photoswipe/lib/photoswipe.css';
 import { PhotoSwipeGallery } from 'react-photoswipe';
@@ -22,9 +21,9 @@ const getStyleNames = (names) => {
   if (!names) {
     return '';
   } else if (names.length === 1) {
-    return styles[names[0]];
+    return styles[names[0]] + '. ';
   } else {
-    return 'Blend of ' + names.map((name) => styles[name]).join(' & ') + '.';
+    return 'Blend of ' + names.map((name) => styles[name]).join(' & ') + '. ';
   }
 }
 
@@ -37,13 +36,12 @@ const getPhotoGroup = (group) => {
       thumbnail: `img/${raw.file}t.jpg`,
       w: raw.w,
       h: raw.h,
-      title: getStyleNames(raw.stone) + (raw.detail ? `. ${raw.detail}` : ""),
+      title: getStyleNames(raw.stone) + (raw.detail ? `${raw.detail}` : ""),
       stone: raw.stone,
     }));
 };
 
 let options = {
-  //http://photoswipe.com/documentation/options.html
   showHideOpacity: true,
   getThumbBoundsFn: false,
   shareEl: false,
@@ -54,7 +52,12 @@ let options = {
 
 const getThumbnailContent = (item) => {
   return (
-    <img src={item.thumbnail} width={120} height={120}/>
+    <img
+      src={item.thumbnail}
+      width={120}
+      height={120}
+      alt={item.title}
+    />
   );
 }
 
@@ -114,15 +117,21 @@ class Form extends React.Component {
   }
 }
 
+function Logo() {
+  return (
+    <div className="logo">
+      <p>SEDONA</p>
+      <p>STONE</p>
+      <p>VENEER</p>
+    </div>
+  );
+}
+
 function App() {
   return (
     <>
       <header>
-        <div className="logo">
-          <p>SEDONA</p>
-          <p>STONE</p>
-          <p>VENEER</p>
-        </div>
+        <Logo />
         <div className="description">
           <p>Local manufacturer of beautiful stone veneer.</p>
           <p>High quality products at factory direct prices.</p>
@@ -158,7 +167,13 @@ function App() {
               <h3>Mon to Fri: 8 – 4:30</h3>
               <h3>Sat: Please call ahead for hours</h3>
             </div>
-            <iframe width="100%" height="450" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgVBnsl6wK4cRNDqotuzkOhc&key=AIzaSyCVHr2ug300Slszr1DiJrTCjqvO2Kmddhg&zoom=10"></iframe>
+            <iframe
+              width="100%"
+              height="450"
+              frameBorder="0"
+              title="map of Sedona Stone Veneer at 9605 East Main St. Mesa, AZ 85207"
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgVBnsl6wK4cRNDqotuzkOhc&key=AIzaSyCVHr2ug300Slszr1DiJrTCjqvO2Kmddhg&zoom=10"
+            ></iframe>
           </div>
         </section>
         <section id="stones">
@@ -189,6 +204,11 @@ function App() {
         </section>
       </main>
       <footer>
+        <Logo />
+        <div className="description">
+          <h2>(602) 845 - 0004</h2>
+          <h3>9605 East Main St. Mesa, AZ 85207</h3>
+        </div>
       </footer>
     </>
   );
