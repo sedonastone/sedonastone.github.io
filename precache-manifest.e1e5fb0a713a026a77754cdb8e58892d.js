@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8807e9a70feb7002f9c7ccea9e465d0b",
+    "revision": "2e9b2d293e5146954945862f99be458b",
     "url": "/sedonasv/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sedonasv/static/css/2.d4a6af3e.chunk.css"
   },
   {
-    "revision": "626c8a93dee4586a8373",
-    "url": "/sedonasv/static/css/main.b6de141b.chunk.css"
+    "revision": "ffcc67a3f1f5ebfb4522",
+    "url": "/sedonasv/static/css/main.a835c3be.chunk.css"
   },
   {
     "revision": "6b88cf4b162df61aa08f",
     "url": "/sedonasv/static/js/2.87b6f92e.chunk.js"
   },
   {
-    "revision": "626c8a93dee4586a8373",
-    "url": "/sedonasv/static/js/main.b40cbf6b.chunk.js"
+    "revision": "ffcc67a3f1f5ebfb4522",
+    "url": "/sedonasv/static/js/main.bd16dcc7.chunk.js"
   },
   {
     "revision": "ec6dcfdc6e212ba67200",
