@@ -83,11 +83,12 @@ class Form extends React.Component {
       body: data,
       mode: 'no-cors',
     }).then((r) => {
-      console.log('hit');
       this.setState({
         submitted: true,
       });
     });
+
+    sendTag('form', [...data.values()].toString());
   }
 
   render() {
@@ -115,6 +116,15 @@ class Form extends React.Component {
         <button>Send</button>
       </form>
     );
+  }
+}
+
+function sendTag(key, val) {
+  const payload = {
+    [key]: val,
+  }
+  if (window.dataLayer) {
+    window.dataLayer.push(payload);
   }
 }
 
