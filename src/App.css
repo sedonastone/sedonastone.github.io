@@ -52,6 +52,10 @@ nav {
   align-items: center;
 }
 
+.nav_logo, .side_tel {
+  display: none;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -112,7 +116,9 @@ section {
 }
 
 .textcontent {
-  padding: 0 0.8em;
+  /* padding: 0 0.8em; */
+  max-width: 50em;
+  padding: 0 1.5em;
 }
 
 section#visit {
@@ -145,11 +151,11 @@ section#trim {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+/* 
 .section_description {
   max-width: 50em;
   padding: 0 3em;
-}
+} */
 
 .stonecontainer {
   text-align: center;
@@ -205,6 +211,15 @@ form button {
   color: white;
 }
 
+.call_to_action {
+  text-decoration: none;
+  color: black;
+}
+
+.call_to_action:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 23em) {
   nav {
     display: flex;
@@ -234,18 +249,54 @@ form button {
 }
 
 @media (min-width: 95em) {
+  .nav_logo {
+    z-index: -1;
+    display: block;
+    position: fixed;
+    top: 1em;
+    left: 11.5em;
+    width: 14em;
+    height: 6em;
+    /* background-color: #5E747F; */
+    color: #5E747F;
+    /* color: white; */
+    font-size: 0.8em;
+  }
+
+  .nav_logo .logo {
+    border: none;
+  }
+
+  .side_tel {
+    display: block;
+    position: fixed;
+    top: 16.5em;
+    left: 3em;
+    width: 14em;
+    text-align: center;
+    /* color: #5E747F; */
+  }
+
+  .side_tel a {
+    color: #5E747F;
+  }
+
+  header .call_to_action {
+    display: none;
+  }
+  
   nav {
     position: fixed;
     top: 6em;
     left: 3em;
     height: 10em;
+    width: 14em;
   }
 
   nav ul {
     text-align: left;
     display: inline-block;
     height: initial;
-
   }
 
   nav li {

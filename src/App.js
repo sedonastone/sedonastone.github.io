@@ -146,9 +146,10 @@ function App() {
         <div className="description">
           <p>Local manufacturer of beautiful stone veneer.</p>
           <p>High quality products at factory direct prices.</p>
-          <p>Family owned & operated. <b>(602) 845 - 0004</b></p>
+          <p>Family owned & operated. <b><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></b></p>
         </div>
       </header>
+      <div className="nav_logo"><Logo /></div>
       <nav id="navbar">
         <ul>
           <li><a href="#photos">Photos</a></li>
@@ -157,6 +158,7 @@ function App() {
           <li><a href="#trim">Trim</a></li>
         </ul>
       </nav>
+      <div className="side_tel"><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></div>
       <main>
         <section id="photos" className="gallery">
           {/* <p>A selection of photos from some of the many Sedona Stone Veneer installations in the Phoenix metro area and across the Southwest. These include remodels, new construction, small updates, homes, businesses, interiors, exteriors, and more. Click photos to enlarge.</p>  */}
@@ -165,7 +167,7 @@ function App() {
         <section id="visit">
           <div className="questions">
             <div className="textcontent">
-              <h2>(602) 845 – 0004</h2>
+              <h2><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 – 0004</a></h2>
               <i>Give us a call for a free quote & more info. Or use this form:</i>
             </div>
             <Form />
@@ -173,7 +175,7 @@ function App() {
           
           <div className="map">
             <div className="textcontent">
-              <h2>9605 East Main St. Mesa, AZ 85207</h2>
+              <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h2>
               <i>At the SE corner of 96th St. & Main St. (Apache Trail), next to Craft City.</i>
               <h3>Mon to Fri: 8 – 4:30</h3>
               <h3>Sat: Please call ahead for hours</h3>
@@ -188,7 +190,7 @@ function App() {
           </div>
         </section>
         <section id="stones">
-          <div className="section_description">
+          <div className="textcontent section_description">
             <h2>10 Stone Styles</h2>
             <p>We offer ten Stone Styles, with a wide variety of textures and shapes to fit your tastes, whether you are looking for something traditional or contemporary.</p>
             <ul>
@@ -225,7 +227,7 @@ function App() {
           {/* <div id="spacer" /> */}
         </section>
         <section id="trim" className="gallery">
-          <div className="section_description">
+          <div className="textcontent section_description">
             <h2>Wide selection of trim</h2>
             <p>For a cohesive look, our trimstones offer the necessary accents to complete your project. We offer a wide range of trim to cap walls, provide seating surfaces, finish edges, surround outlets and doorways, and more. Trimstones are available in the same wide range of Color Schemes seen above. <b>Click photos to enlarge.</b></p>
           </div>
@@ -235,8 +237,8 @@ function App() {
       <footer>
         <Logo />
         <div className="description">
-          <h2>(602) 845 - 0004</h2>
-          <h3>9605 East Main St. Mesa, AZ 85207</h3>
+          <h2><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 – 0004</a></h2>
+          <h3><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h3>
         </div>
       </footer>
     </>
