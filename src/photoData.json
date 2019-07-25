@@ -967,6 +967,166 @@
             "stone": [ "sl" ],
             "detail": "",
             "priority": 0
+        },
+        {
+            "file": "096_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "ss" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "097_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "097_1",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "098_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "as" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "098_1",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "as" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "099_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "100_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "101_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "102_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "103_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "103_1",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "104_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "105_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "106_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "106_1",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "107_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "108_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "109_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "109_1",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "110_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "ss" ],
+            "detail": "",
+            "priority": 0
         }
     ],
     "trim" : [
