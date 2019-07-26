@@ -202,7 +202,8 @@ function App() {
       <main>
         <section id="photos" className="gallery">
           <div className="section_description">
-            <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest. We offe 10 Stone Styles and 9 Color Schemes (BAJA, WALNUT, SEDONA, GRAND CANYON, IRONWOOD, SANTA FE, PRESCOTT, MESQUITE, OAK CREEK) and a variety of trim stones.</p>
+            <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest.</p>
+            <p>We offer 10 Stone Styles & 9 Color Schemes (BAJA, WALNUT, SEDONA, GRAND CANYON, IRONWOOD, SANTA FE, PRESCOTT, MESQUITE, OAK CREEK) and a variety of trim stones.</p>
           </div>
           <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
