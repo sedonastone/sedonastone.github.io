@@ -1127,6 +1127,30 @@
             "stone": [ "ss" ],
             "detail": "",
             "priority": 0
+        },
+        {
+            "file": "111_0",
+            "w": 1200,
+            "h": 850,
+            "stone": [ "cl", "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "112_0",
+            "w": 1200,
+            "h": 900,
+            "stone": [ "as" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "113_0",
+            "w": 674,
+            "h": 900,
+            "stone": [ "rb" ],
+            "detail": "",
+            "priority": 0
         }
     ],
     "trim" : [

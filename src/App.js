@@ -161,7 +161,7 @@ function App() {
       <div className="side_tel"><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></div>
       <main>
         <section id="photos" className="gallery">
-          {/* <p>A selection of photos from some of the many Sedona Stone Veneer installations in the Phoenix metro area and across the Southwest. These include remodels, new construction, small updates, homes, businesses, interiors, exteriors, and more. Click photos to enlarge.</p>  */}
+          <p><b>Click on photos</b> to see some of the many Sedona Stone Veneer projects in the Phoenix area and across the Southwest. We offer a wide range of 10 Stone Styles and 9 Color Schemes (BAJA, WALNUT, SEDONA, GRAND CANYON, IRONWOOD, SANTA FE, PRESCOTT, MESQUITE, OAK CREEK) and a variety of trim and cap stones.</p>
           <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
         <section id="visit">
@@ -229,7 +229,7 @@ function App() {
         <section id="trim" className="gallery">
           <div className="textcontent section_description">
             <h2>Wide selection of trim</h2>
-            <p>For a cohesive look, our trimstones offer the necessary accents to complete your project. We offer a wide range of trim to cap walls, provide seating surfaces, finish edges, surround outlets and doorways, and more. Trimstones are available in the same wide range of Color Schemes seen above. <b>Click photos to enlarge.</b></p>
+            <p><b>Click photos to enlarge.</b> For a cohesive look, our trimstones offer the necessary accents to complete your project. We offer a wide range of trim to cap walls, provide seating surfaces, finish edges, surround outlets and doorways, and more. Trimstones are available in the same wide range of Color Schemes seen above.</p>
           </div>
           <PhotoSwipeGallery items={trimItems} options={Object.assign({ galleryUID: 1 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
