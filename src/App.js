@@ -97,10 +97,10 @@ class Form extends React.Component {
     }
     return (
       <form onSubmit={this.handleSubmit} className="quote">
-        <input id="form_name" name="entry.153663014" placeholder="Name" type="text" />
-        <input id="form_email" name="entry.467162401" placeholder="Email" type="email" />
-        <input id="form_phone" name="entry.1630298825" placeholder="Phone" type="tel" />
-        <textarea id="form_message" name="entry.738084605" placeholder="Message" rows="3" />
+        <input id="form_name" name="entry.153663014" placeholder="Name" aria-label="Name" type="text" />
+        <input id="form_email" name="entry.467162401" placeholder="Email" aria-label="Email address" type="email" />
+        <input id="form_phone" name="entry.1630298825" placeholder="Phone" aria-label="Phone number" type="tel" />
+        <textarea id="form_message" name="entry.738084605" placeholder="Message" aria-label="Message" rows="3" />
         <button>Send</button>
       </form>
     );
