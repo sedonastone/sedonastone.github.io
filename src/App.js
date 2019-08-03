@@ -202,8 +202,7 @@ function App() {
       <main>
         <section id="photos" className="gallery">
           <div className="section_description">
-            <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest.</p>
-            <p>We offer 10 Stone Styles & 9 Color Schemes (BAJA, WALNUT, SEDONA, GRAND CANYON, IRONWOOD, SANTA FE, PRESCOTT, MESQUITE, OAK CREEK) and a variety of trim stones.</p>
+            <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest. We offer 10 Stone Styles & 9 Color Schemes and a variety of trim stones.</p>
           </div>
           <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
@@ -250,6 +249,36 @@ function App() {
               <img className="sq" src="img/sq_sl.jpg" alt="Stone style: Split Ledgestone" />
               <img className="sq" src="img/sq_cs.jpg" alt="Stone style: Castlestone" />
               <img className="sq" src="img/sq_ss.jpg" alt="Stone style: Stackstone" />
+          </div>
+        </section>
+        <section id="colors">
+          <div className="section_description">
+            <h2>9 Color Schemes</h2>
+            <p>Inspired by the striking natural landscapes of the Southwest, our nine Color Schemes range from subtle to vibrant.</p>
+            <ul>
+              <li><b>BAJA</b> blend of light tans and khaki</li>
+              <li><b>WALNUT</b> intense shades of amber</li>
+              <li><b>SEDONA</b> hues of red rock country</li>
+              <li><b>GRAND CANYON</b> deep, earthy jewel tones</li>
+              <li><b>IRONWOOD</b> rich grays with warm accenting</li>
+              <li><b>SANTA FE</b> adobe earth tones of the high desert</li>
+              <li><b>PRESCOTT</b> warm mountain shades</li>
+              <li><b>MESQUITE</b> dark slate and charcoal</li>
+              <li><b>OAK CREEK</b> blend of gold, soft beige, eggplant & cream</li>
+            </ul>
+          </div>
+          <div className="stonecontainer">
+              <img className="sq" src="img/color_baja.jpg" alt="Stone style: Quick Fit" />
+              <img className="sq" src="img/color_wal.jpg" alt="Stone style: Ashlarstone" />
+              <img className="sq" src="img/color_sed.jpg" alt="Stone style: Fieldstone" />
+
+              <img className="sq" src="img/color_gc.jpg" alt="Stone style: Chiseled Limestone" />
+              <img className="sq" src="img/color_iw.jpg" alt="Stone style: Tumbled Ledgestone" />
+              <img className="sq" src="img/color_sf.jpg" alt="Stone style: Riverstone" />
+
+              <img className="sq" src="img/color_pres.jpg" alt="Stone style: Split Ledgestone" />
+              <img className="sq" src="img/color_mes.jpg" alt="Stone style: Castlestone" />
+              <img className="sq" src="img/color_oak.jpg" alt="Stone style: Stackstone" />
           </div>
         </section>
         <section id="trim" className="gallery">
