@@ -49,6 +49,8 @@ let options = {
   fullscreenEl: false,
   zoomEl: false,
   bgOpacity: 0.8,
+  tapToToggleControls: false,
+  tapToClose: true,
 };
 
 const galleryItems = getPhotoGroup('gallery');
