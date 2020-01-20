@@ -51,17 +51,6 @@ let options = {
   bgOpacity: 0.8,
 };
 
-const getThumbnailContent = (item) => {
-  return (
-    <img
-      src={item.thumbnail}
-      width={120}
-      height={120}
-      alt={item.title}
-    />
-  );
-}
-
 const galleryItems = getPhotoGroup('gallery');
 const trimItems = getPhotoGroup('trim');
 
@@ -177,7 +166,45 @@ function LabeledBox(props) {
   );
 }
 
+function debounce(fn, ms) {
+  let timer;
+  return _ => {
+    clearTimeout(timer);
+    timer = setTimeout(_ => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  }
+}
+
 function App() {
+  const [isNarrow, setIsNarrow] = React.useState(window.innerWidth < 600);
+
+  React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setIsNarrow(window.innerWidth < 600);
+    }, 100)
+
+    window.addEventListener('resize', debouncedHandleResize)
+
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+
+  });
+
+  const getThumbnailContent = (item) => {
+    const thumbnailSize = isNarrow ? 100 : 120;
+    return (
+      <img
+        src={item.thumbnail}
+        width={thumbnailSize}
+        height={thumbnailSize}
+        alt={item.title}
+      />
+    );
+    }
+
   return (
     <>
       <header>
