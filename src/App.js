@@ -48,7 +48,7 @@ let options = {
   captionEl: false,
   fullscreenEl: false,
   zoomEl: false,
-  bgOpacity: 0.8,
+  bgOpacity: 0.85,
   tapToToggleControls: false,
   tapToClose: true,
 };
