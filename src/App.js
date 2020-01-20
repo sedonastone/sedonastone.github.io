@@ -129,13 +129,13 @@ function Logo() {
 function QuotePrompt() {
   return (
     <div className="clear-box-container box-container">
-      <h3>For a free quote, please fill out the form or give us a call. Relevant info includes:</h3>
+      <h3>For a free quote, please use this form or give us a call. Helpful info includes:</h3>
       <ul>
-        <li>Total square footage of flat areas to be covered with stone</li>
-        <li>Total linear footage (height) of corners to be covered</li>
-        <li>Stone Style & Color Scheme preferences</li>
+        <li>Square footage of flat areas</li>
+        <li>Linear footage of corners (height)</li>
+        <li><b>Stone Style</b> & <b>Color Scheme</b> preferences</li>
         <li>Any Trimstones</li>
-        <li>Preference of delivery location or pick-up from our Mesa shop</li>
+        <li>Delivery location or pick-up from our Mesa shop</li>
       </ul>
     </div>
   );
@@ -183,9 +183,9 @@ function App() {
       <header>
         <Logo />
         <div className="description">
-          <p>Local manufacturer of beautiful stone veneer.</p>
-          <p>High quality products at factory direct prices.</p>
-          <p>Family owned & operated. <b><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></b></p>
+          <p>Beautiful stone veneer</p>
+          <p>Direct from the factory</p>
+          <p><b><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></b></p>
         </div>
       </header>
       <div className="nav_logo"><Logo /></div>
@@ -200,13 +200,15 @@ function App() {
       </nav>
       <div className="side_tel"><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></div>
       <main>
-        <section id="photos" className="gallery">
+        <span className="nav_anchor" id="photos"></span>
+        <section id="" className="gallery">
           <div className="section_description">
             <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest. We offer 10 Stone Styles & 9 Color Schemes and a variety of trim stones.</p>
           </div>
           <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
-        <section id="contact">
+        <span className="nav_anchor" id="contact"></span>
+        <section id="contact_section">
           <QuotePrompt />
           <LabeledBox title="Message Us">
             <Form />
@@ -214,12 +216,13 @@ function App() {
           <LabeledBox title="Call Us">
             <Phone />
           </LabeledBox>
-          <span id="visit" />
+          <span className="nav_anchor" id="visit" />
           <LabeledBox title="Visit Us">
             <GMap />
           </LabeledBox>
         </section>
-        <section id="stones">
+        <span className="nav_anchor" id="stones"></span>
+        <section id="stones_section">
           <div className="section_description">
             <h2>10 Stone Styles</h2>
             <p>We offer a wide variety of textures and shapes to fit your tastes.</p>
@@ -281,7 +284,8 @@ function App() {
               <img className="sq" src="img/color_oak.jpg" alt="Stone style: Stackstone" />
           </div>
         </section>
-        <section id="trim" className="gallery">
+        <span className="nav_anchor" id="trim"></span>
+        <section id="trim_section" className="gallery">
           <div className="section_description">
             <h2>Wide selection of trim</h2>
             <p><b>Click photos to enlarge.</b> For a cohesive look, our trimstones offer accents to complete your project -- wall caps, seating surfaces, finished edges, outlet & doorway surrounds and more.</p>

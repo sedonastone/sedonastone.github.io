@@ -8,8 +8,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.2em;
+}
+
 header, footer {
-  background-color: #F2C0A7;
+  background-color: #e29277;
   height: 9em;
   display: flex;
   flex-direction: column;
@@ -83,13 +87,18 @@ nav li a:hover {
 }
 
 section {
-  padding-top: 1.5em;
+  padding-top: 1em;
   padding-bottom: 1.2em;
   max-width: 80em;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.nav_anchor {
+  position: relative;
+  top: -1em;
 }
 
 .pswp-thumbnails {
@@ -112,7 +121,7 @@ section {
   cursor: pointer;
 }
 
-section#stones {
+section#stones_section {
   background-color: #FFF4E9;
 }
 
@@ -135,7 +144,7 @@ section#stones {
   border-radius: 0.2em;
 }
 
-#stones li {
+#stones_section li {
   padding-bottom: 0.3em;
 }
 
@@ -151,12 +160,13 @@ img {
   display: block;
 }
 
-section#contact {
+section#contact_section {
   display: grid;
 }
 
+
 .box-label {
-  margin: 0.5em 0 -0.25em 0.1em;
+  margin: 0.4em 0 -0.25em 0.1em;
   color: #F2AC8A;
   text-align: left;
 }
@@ -291,6 +301,8 @@ form button:hover {
 
   .side_tel a {
     color: #5E747F;
+    font-size: 1.4em;
+    font-weight: 500;
   }
 
   header .call_to_action {
