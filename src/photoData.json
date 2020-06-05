@@ -934,7 +934,7 @@
             "h": 900,
             "stone": [ "as", "cl" ],
             "detail": "",
-            "priority": 100
+            "priority": 0
         },
         {
             "file": "093_0",
@@ -1149,6 +1149,190 @@
             "w": 674,
             "h": 900,
             "stone": [ "rb" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "114_0",
+            "w": 1920,
+            "h": 1134,
+            "stone": [ "rb" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "115_0",
+            "w": 2188,
+            "h": 1478,
+            "stone": [ "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "116_0",
+            "w": 960,
+            "h": 769,
+            "stone": [ "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "117_0",
+            "w": 1000,
+            "h": 1135,
+            "stone": [ "cl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "118_0",
+            "w": 1600,
+            "h": 1200,
+            "stone": [ "as", "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "119_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "as", "cl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "120_0",
+            "w": 1135,
+            "h": 724,
+            "stone": [ "as" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "121_0",
+            "w": 1300,
+            "h": 1000,
+            "stone": [ "as" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "122_0",
+            "w": 1539,
+            "h": 1000,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "123_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "124_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "125_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "as", "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "126_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "fs" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "127_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "128_0",
+            "w": 1313,
+            "h": 1000,
+            "stone": [ "rb" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "129_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "qf" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "130_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "sl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "131_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "rb" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "132_0",
+            "w": 1024,
+            "h": 768,
+            "stone": [ "tl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "133_0",
+            "w": 1024,
+            "h": 768,
+            "stone": [ "tl" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "134_0",
+            "w": 1333,
+            "h": 1000,
+            "stone": [ "ss" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "135_0",
+            "w": 1369,
+            "h": 1000,
+            "stone": [ "ss" ],
+            "detail": "",
+            "priority": 0
+        },
+        {
+            "file": "136_0",
+            "w": 1235,
+            "h": 1000,
+            "stone": [ "ss" ],
             "detail": "",
             "priority": 0
         }
