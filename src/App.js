@@ -136,9 +136,9 @@ function GMap() {
   return (
     <>
       <div className="map-text">
-        <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h2>
+        <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action" target="_blank" rel="noopener noreferrer">9605 East Main St. Mesa, AZ 85207</a></h2>
         <i>We're at the SE corner of 96th St & Main St (aka Apache Trail), next to Craft City.</i>
-        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri: 8AM – 4:30PM&nbsp;&nbsp;&nbsp;Sat: Please call ahead for hours.</p>
+        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri: 7 AM – 4 PM&nbsp;&nbsp;&nbsp;Sat: 7 AM – Noon</p>
       </div>
       <iframe
         width="100%"
@@ -326,7 +326,7 @@ function App() {
         <Logo />
         <div className="description">
           <h2><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 – 0004</a></h2>
-          <h3><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h3>
+          <h3><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action" target="_blank" rel="noopener noreferrer">9605 East Main St. Mesa, AZ 85207</a></h3>
         </div>
       </footer>
     </>
