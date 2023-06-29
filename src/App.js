@@ -30,7 +30,7 @@ const getStyleNames = (names) => {
 const getPhotoGroup = (group) => {
   const fileList = photoData[group];
   return fileList
-    // .sort()
+    .filter((raw) => raw.priority !== 0)
     .map((raw) => ({
       src: `img/${raw.file}.jpg`,
       thumbnail: `img/${raw.file}t.jpg`,
@@ -138,7 +138,8 @@ function GMap() {
       <div className="map-text">
         <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action" target="_blank" rel="noopener noreferrer">9605 East Main St. Mesa, AZ 85207</a></h2>
         <i>We're at the SE corner of 96th St & Main St (aka Apache Trail), next to Craft City.</i>
-        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri 6:30am – 3pm & Sat by appointment</p>
+        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri 7am – 3pm & Sat by appointment</p>
+        <p>Closed July 1, 3 & 4</p>
       </div>
       <iframe
         width="100%"
