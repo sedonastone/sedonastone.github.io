@@ -251,6 +251,12 @@ form button:hover {
   text-decoration: underline;
 }
 
+.head {
+  width: 35em;
+  margin: auto;
+  padding-top: 1em;
+}
+
 @media (min-width: 48em) {
   header, footer {
     height: 10em;
@@ -268,9 +274,17 @@ form button:hover {
     margin: auto 2em;
 
   }
+
   .pswp-thumbnails {
     justify-content: center;
   }
+
+  .head {
+  width: 55em;
+  margin: auto;
+  padding-top: 1em;
+  }
+
 }
 
 @media (min-width: 95em) {
@@ -333,5 +347,10 @@ form button:hover {
   
   main {
     margin-left: 16em;
+  }
+
+  .head {
+  width: 65em;
+  padding-top: 2em;
   }
 }
