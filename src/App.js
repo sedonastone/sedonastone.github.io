@@ -138,8 +138,7 @@ function GMap() {
       <div className="map-text">
         <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action" target="_blank" rel="noopener noreferrer">9605 East Main St. Mesa, AZ 85207</a></h2>
         <i>We're at the SE corner of 96th St & Main St (aka Apache Trail), next to Craft City.</i>
-        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri 7:30am - 3:30pm & Sat by appointment</p>
-        <p>Holidays hours: Wed Dec 27 to Fri Dec 29: 8am - Noon. Closed Dec 30 thru Jan 1.</p>
+        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri 8am - 4pm & Sat 9am - 1pm</p>
       </div>
       <iframe
         width="100%"
@@ -241,9 +240,6 @@ function App() {
         <span className="nav_anchor" id="contact"></span>
         <section id="contact_section">
           <QuotePrompt />
-          <LabeledBox title="Message Us">
-            <Form />
-          </LabeledBox>
           <LabeledBox title="Call Us">
             <Phone />
           </LabeledBox>
