@@ -280,9 +280,7 @@ function App() {
               <img className="sq" src="img/sq_cs.jpg" alt="Stone style: Castlestone" />
               <img className="sq" src="img/sq_ss.jpg" alt="Stone style: Stackstone" />
 
-              <img className="sq" src="img/sq_sl.jpg" alt="Stone style: Split Ledgestone" />
-              <img className="sq" src="img/sq_cs.jpg" alt="Stone style: Castlestone" />
-              <img className="sq" src="img/sq_ss.jpg" alt="Stone style: Stackstone" />
+              
           </div>
         </section>
         <section id="colors">
@@ -309,6 +307,10 @@ function App() {
               <img className="sq" src="img/color_gc.jpg" alt="Stone style: Chiseled Limestone" />
               <img className="sq" src="img/color_iw.jpg" alt="Stone style: Tumbled Ledgestone" />
               <img className="sq" src="img/color_sf.jpg" alt="Stone style: Riverstone" />
+
+              <img className="sq" src="img/color_pres.jpg" alt="Stone style: Split Ledgestone" />
+              <img className="sq" src="img/color_mes.jpg" alt="Stone style: Castlestone" />
+              <img className="sq" src="img/color_oak.jpg" alt="Stone style: Stackstone" />
 
               <img className="sq" src="img/color_pres.jpg" alt="Stone style: Split Ledgestone" />
               <img className="sq" src="img/color_mes.jpg" alt="Stone style: Castlestone" />
