@@ -279,6 +279,10 @@ function App() {
               <img className="sq" src="img/sq_sl.jpg" alt="Stone style: Split Ledgestone" />
               <img className="sq" src="img/sq_cs.jpg" alt="Stone style: Castlestone" />
               <img className="sq" src="img/sq_ss.jpg" alt="Stone style: Stackstone" />
+
+              <img className="sq" src="img/sq_sl.jpg" alt="Stone style: Split Ledgestone" />
+              <img className="sq" src="img/sq_cs.jpg" alt="Stone style: Castlestone" />
+              <img className="sq" src="img/sq_ss.jpg" alt="Stone style: Stackstone" />
           </div>
         </section>
         <section id="colors">
